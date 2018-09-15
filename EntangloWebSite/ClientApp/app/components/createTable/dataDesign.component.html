@@ -1,0 +1,12 @@
+﻿<!--<h1>Data Design</h1>-->
+
+<canvas #canvas (touchstart)="onTouchStart($event)" 
+                (mousedown)="onMouseDown($event)" 
+                (touchmove)="getTouchDirection($event)"
+                (mousemove)="getMouseDirection($event)"
+                (touchend)="onTouchEnd($event)"
+                (mouseup)="onMouseUp($event)"></canvas>
+
+<!--<canvas><div class="container"></div></canvas>-->
+<!--<canvas #canvas ></canvas>-->
+<!--<div id="container"></div>-->

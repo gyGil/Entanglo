@@ -1,0 +1,54 @@
+﻿<!--<div class="ocrmain">
+    <div class="ocrcamtoggle">
+        <button (click)="toggleCam()" class="btn btn-danger" data-toggle="button" aria-pressed="false"><i class={{strCamTurnOnOffIcon}}></i> {{strCamTurnOnOff}}</button>
+    </div>
+</div> 
+<br />-->
+<!--<div >-->
+    <!--<div class="ocrshot" [hidden]=tookShot>-->
+    <!--<div class="ocrshot" >
+        <div class="ocrviewfinder">
+            <button (click)="toggleCam()" class="btn btn-danger" data-toggle="button" aria-pressed="false"><i class={{strCamTurnOnOffIcon}}></i> {{strCamTurnOnOff}}</button>
+            <video #videoElement>
+            </video>
+            <button type="button" (click)="toggleShot()" class="btn btn-info btn-circle btn-lg" data-toggle="button" aria-pressed="false"><i class={{strTakePic}}></i></button>
+        </div>
+    </div>-->
+    <!--<div class="ocrnotshot" [hidden]=!tookShot>
+        <div class="ocrcanvas">
+            <canvas #canvasElement></canvas>
+        </div>
+    </div>-->
+<!--</div>-->
+<!--<br />
+<div class="ocrcamshot" *ngIf="isCamTurnOn">
+    <div class="ocrtakeshot">
+        <button type="button" (click)="toggleShot()" class="btn btn-info btn-circle btn-lg" data-toggle="button" aria-pressed="false"><i class={{strTakePic}}></i></button>
+    </div>
+</div>-->
+
+<div class="ocrviewfinder"   (touchstart)="onCamDown($event, 'start')"
+                             (touchend)="onCamUp($event, 'end')"
+                             (mousedown)="onCamDown($event, 'start')"
+                             (mouseup)="onCamUp($event, 'end')">
+
+    <div class="vid">
+        <video #videoElement></video>
+        <span class="buttons">
+            <i (click)="toggleCam()" class="glyphicon glyphicon-facetime-video"></i>
+            <i (click)="toggleShot()" class="glyphicon glyphicon-camera"></i>
+        </span>
+    </div>
+    <!--<button (click)="toggleCam()"style="z-index:1000;" class="on-off" data-toggle="button" aria-pressed="false">
+        <i class={{strCamTurnOnOffIcon}}></i> {{strCamTurnOnOff}}
+    </button>-->
+    <!--<button type="button" (click)="toggleShot()" class="capture" data-toggle="button" aria-pressed="false">
+        <i class={{strTakePic}}></i>
+    </button>-->
+    <!--<i (click)="toggleCam()" style="margin: 100px" class={{strCamTurnOnOffIcon}}></i>
+    <i (click)="toggleShot()" class={{strTakePic}}></i>-->
+    
+
+</div>
+
+

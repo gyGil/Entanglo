@@ -1,0 +1,17 @@
+C:\Entanglo\EntangloWebService\EntangloWebService\bin\Release\netcoreapp2.0\EntangloWebService.deps.json
+C:\Entanglo\EntangloWebService\EntangloWebService\bin\Release\netcoreapp2.0\EntangloWebService.runtimeconfig.json
+C:\Entanglo\EntangloWebService\EntangloWebService\bin\Release\netcoreapp2.0\EntangloWebService.runtimeconfig.dev.json
+C:\Entanglo\EntangloWebService\EntangloWebService\bin\Release\netcoreapp2.0\EntangloWebService.dll
+C:\Entanglo\EntangloWebService\EntangloWebService\bin\Release\netcoreapp2.0\EntangloWebService.pdb
+C:\Entanglo\EntangloWebService\EntangloWebService\bin\Release\netcoreapp2.0\DataAccessLibrary.dll
+C:\Entanglo\EntangloWebService\EntangloWebService\bin\Release\netcoreapp2.0\DatabaseServices.dll
+C:\Entanglo\EntangloWebService\EntangloWebService\bin\Release\netcoreapp2.0\DomainModels.dll
+C:\Entanglo\EntangloWebService\EntangloWebService\bin\Release\netcoreapp2.0\DatabaseServices.pdb
+C:\Entanglo\EntangloWebService\EntangloWebService\bin\Release\netcoreapp2.0\DomainModels.pdb
+C:\Entanglo\EntangloWebService\EntangloWebService\bin\Release\netcoreapp2.0\DataAccessLibrary.pdb
+C:\Entanglo\EntangloWebService\EntangloWebService\obj\Release\netcoreapp2.0\EntangloWebService.csprojResolveAssemblyReference.cache
+C:\Entanglo\EntangloWebService\EntangloWebService\obj\Release\netcoreapp2.0\EntangloWebService.csproj.CoreCompileInputs.cache
+C:\Entanglo\EntangloWebService\EntangloWebService\obj\Release\netcoreapp2.0\EntangloWebService.AssemblyInfoInputs.cache
+C:\Entanglo\EntangloWebService\EntangloWebService\obj\Release\netcoreapp2.0\EntangloWebService.AssemblyInfo.cs
+C:\Entanglo\EntangloWebService\EntangloWebService\obj\Release\netcoreapp2.0\EntangloWebService.dll
+C:\Entanglo\EntangloWebService\EntangloWebService\obj\Release\netcoreapp2.0\EntangloWebService.pdb

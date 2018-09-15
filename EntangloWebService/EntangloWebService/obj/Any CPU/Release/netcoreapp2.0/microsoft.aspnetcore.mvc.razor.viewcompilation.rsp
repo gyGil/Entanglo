@@ -1,0 +1,5 @@
+C:\Entanglo\EntangloWebService\EntangloWebService
+--output-path=obj\Any CPU\Release\netcoreapp2.0\
+--application-name=EntangloWebService
+--content-root=C:\Entanglo\EntangloWebService\EntangloWebService
+--file=

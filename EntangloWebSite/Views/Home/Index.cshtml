@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<app asp-ng2-prerender-module="ClientApp/dist/main-server">Loading...</app>
+<script src="~/dist/vendor.js" asp-append-version="true"></script>
+
+<!-- three.js related files -->
+
+@*<script src="~/dist/res/lib/jquery-1.8.3.min.js"></script>
+<script src="~/dist/res/lib/three.min.js"></script>
+<script src="~/dist/res/lib/TrackballControls.js"></script>
+<script src="~/dist/res/lib/DragControls.js"></script>*@
+<!--<script src="~/dist/res/lib/gridswitch.js"></script>-->
+
+
+<!-- End -->
+
+@section scripts {
+    <script src="~/dist/main-client.js" asp-append-version="true"></script>
+}

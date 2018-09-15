@@ -1,0 +1,12 @@
+Entanglo/EntangloWebService/.vs/EntangloWebService
+
+*.lock
+*.ide
+*.ide-shm
+*.ide-wal
+.suo
+main-client.js
+main-client.js.map
+EntangloWebSite/obj
+EntangloWebSite/v15
+slnx.sqlite

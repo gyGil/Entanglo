@@ -1,0 +1,346 @@
+﻿
+.vid {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.buttons {
+
+    display: block;
+}
+
+.vid .videoElement {
+
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%;
+    min-height: 100%;
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+    /* Center the video */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.data-main {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.vid .buttons {
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.glyphicon-off, .glyphicon-folder-open {
+
+    margin: 20px;
+    position: initial;
+    bottom: 0;
+    right: 0;
+    font-size: 10vh;
+    cursor: pointer;
+}
+
+.glyphicon-off:hover, .glyphicon-folder-open:hover {
+
+    color: aqua;
+}
+
+#camera {
+
+    color: #ff8480;
+}
+
+#camera:hover {
+
+    color: aqua;
+}
+
+#imageDisplayArea {
+
+    display: none;
+    margin-top: 2em;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#dialog-background {
+
+    display: none;
+    /*margin-top: 2em;*/
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    position: absolute;
+    z-index: 1000;
+    background-color: lightgray;
+}
+
+#canvas {
+
+    display: none;
+}
+
+/* ANGULAR INTERACT JS */
+.drag{
+    
+    width: 25%;
+    height: 100%;
+    min-height: 6.5em;
+    margin: 10%;
+    background-color: #29e;
+    color: white;
+    border-radius: 0.75em;
+    padding: 4%;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+}
+
+#drag-me::before {
+
+    content: "#" attr(id);
+    font-weight: bold;
+}
+
+.draggable {
+
+    width: 90%;
+    height: 5.0vh;
+    min-height: 1.0vh;
+    margin: 5.0% 5.0% 0.0% 5.0%;
+    vertical-align: middle;
+    background-color: #CCC;
+    border-radius: 0.75em;
+    position: absolute;
+    z-index: 999;
+}
+
+
+.data {
+    float: left;
+    height: 100%;
+    background-color: #F5F5F5;
+    width: 33.33%;
+    overflow: hidden;
+    /*&:first-child {
+        margin-right: 50px;
+    }*/
+    /*margin-right: 50px;*/
+}
+
+#choose {
+
+    background-color: #d0e8f0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#discard {
+
+    background-color: lightcoral;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#keep {
+
+    background-color: #43D6A5;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.remove-label {
+
+    font-size: 22vh;
+    color: white;
+    top: 50%;
+    left: 17%;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.save-label {
+    font-size: 20vh;
+    color: white;
+    top: 50%;
+    left: 84%;
+    position: absolute;
+    margin: -18vh 0vh 0vh 0vh;
+    text-align: center;
+    transform: translateX(-50%) translateY(13%) rotate(-90deg);
+}
+
+.select-label {
+
+    font-size: 21vh;
+    color: wheat;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    margin: 6vh 0vh 0vh 0vh;
+    display: initial;
+    transform: translateX(-50%) translateY(-69%) rotate(-90deg);
+}
+
+.glyphicon-arrow-left {
+
+    font-size: 14vw;
+    color: darkred;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 999;
+    opacity: 0.5;
+    transform: translateX(-24vw) translateY(34vh) rotate(0deg);
+}
+
+.glyphicon-arrow-left:hover {
+
+    cursor: pointer;
+}
+
+
+.glyphicon-arrow-right {
+
+    font-size: 14vw;
+    color: darkgreen;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 999;
+    opacity: 0.5;
+    transform: translateX(10vw) translateY(34vh) rotate(0deg);
+}
+
+.glyphicon-arrow-right:hover {
+
+    cursor: pointer;
+}
+
+.glyphicon-th-list {
+
+    font-size: 10vh;
+    color: #333;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 999;
+    opacity: 0.5;
+    transform: translateX(-26vh) translateY(-5vh) rotate(0deg);
+}
+
+.glyphicon-th-list:hover {
+
+    cursor: pointer;
+}
+
+.glyphicon-repeat {
+
+    font-size: 9vw;
+    color: #333;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 999;
+    opacity: 0.5;
+    transform: translateX(-4vw) translateY(37vh) rotate(0deg);
+}
+
+.glyphicon-repeat:hover {
+
+    cursor: pointer;
+}
+
+/*.glyphicon-floppy-saved {*/
+/*.glyphicon-check {*/
+.glyphicon-new-window {
+    font-size: 20vw;
+    color: #5b9aa0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%) translateY(-100%) rotate(0deg);
+    display: none;
+}
+
+.glyphicon-check {
+
+    font-size: 20vw;
+    color: #5b9aa0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%) translateY(-100%) rotate(0deg);
+    display: none;
+}
+
+.glyphicon-floppy-remove {
+
+    font-size: 20vw;
+    color: darkred;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%) translateY(-100%) rotate(0deg);
+    display: none;
+}
+/*.glyphicon, .glyphicon-check {
+
+    display: none;
+}*/
+.done {
+
+    font-size: 5vw;
+    font-weight: bold;
+    color: #5b9aa0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    margin: 5vh 0vh 0vh 0vh;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    display: none;
+}
+
+/*.glyphicon-check:hover, .done:hover {*/
+.glyphicon-new-window:hover, .glyphicon-check:hover, .done:hover {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 1vw;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    
+}
+
+

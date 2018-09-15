@@ -1,0 +1,144 @@
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+<div class="ocr" (touchstart)="onCamDown($event, 'start')"
+     (touchend)="onCamUp($event, 'end')"
+     (mousedown)="onCamDown($event, 'start')"
+     (mouseup)="onCamUp($event, 'end')">
+
+    <div class="imageDisplayArea" #imageDisplayArea ></div>
+
+    <div id="dialog-background"></div>
+
+    <div class="vid">
+        <video class="videoElement" #videoElement autoplay ></video>
+        <div class="buttons" #buttonElement>
+
+            <i (mousedown)="onCamDown($event, 'engage')"
+               (mouseup)="onCamUp($event, 'data')"
+               (touchstart)="onCamDown($event, 'engage')"
+               (touchend)="onCamUp($event, 'data')"
+               (mouseenter)="onMouseEnter($event, 'hover')"
+               (mouseleave)="onMouseLeave($event, 'hover')"
+               class="glyphicon glyphicon-th-list"
+               id="data-view">
+            </i>
+
+            <!--<input id="localimage" type="file" (change)="handleFileInput($event.target.files)" class="glyphicon glyphicon-folder-open">-->
+            <!--<i id="localimage" class="glyphicon glyphicon-folder-open" ></i>-->
+            <span id="localimage" for="fileopen" class="glyphicon glyphicon-folder-open"
+                  (mousedown)="onCamUp($event, 'engage')"
+                  (mouseup)="onCamUp($event, 'open')"
+                  (touchstart)="onCamUp($event, 'engage')"
+                  (touchend)="onCamUp($event, 'open')"
+                  (mouseenter)="onMouseEnter($event, 'hover')"
+                  (mouseleave)="onMouseLeave($event, 'hover')">
+
+            <input id="fileopen" type="file" style="display:none" multiple
+                    (change)="handleFileInput($event.target.files)" />
+
+            </span>
+
+            <i id="camera" (mousedown)="onCamUp($event, 'engage')"
+               (mouseup)="onCamUp($event, 'toggle')"
+               (touchstart)="onCamUp($event, 'engage')"
+               (touchend)="onCamUp($event, 'toggle')"
+               (mouseenter)="onMouseEnter($event, 'hover')"
+               (mouseleave)="onMouseLeave($event, 'hover')"
+               class="glyphicon glyphicon-off">
+            </i>
+        </div>
+    </div>
+
+    <!--<canvas class="vid" #canvas style="display: none" ></canvas>-->
+
+    <div class="data-main" #canvas style="display: none">
+
+        <div class="data remove" id="discard"
+             (scroll)="onScroll($event, 'discard')"
+             (touchmove)="onTouchMove($event, 'scroll')" >
+            <p class="remove-label" id="remove">DISCARD</p>
+        </div>
+
+        <div class="data select" id="choose"
+             (scroll)="onScroll($event, 'choose')"
+             (touchmove)="onTouchMove($event, 'scroll')" >
+
+            <div class="selection-done">
+                <i (mousedown)="onCamDown($event, 'completed')"
+                   (mouseup)="onCamUp($event, 'completed')"
+                   (touchstart)="onCamDown($event, 'completed')"
+                   (touchend)="onCamUp($event, 'completed')"
+                   (mouseenter)="onMouseEnter($event, 'hover')"
+                   (mouseleave)="onMouseLeave($event, 'hover')"
+                   class="glyphicon glyphicon-new-window" 
+                   id="selection">
+                </i>
+
+                <i class="glyphicon glyphicon-check"
+                   id="data-saved">
+                </i>
+
+                <i class="glyphicon glyphicon-floppy-remove"
+                   id="data-error">
+                </i>
+                <!--class="glyphicon glyphicon-check" id="selection"-->
+
+                <p class="done" id="completed"
+                   (mousedown)="onCamDown($event, 'completed')"
+                   (mouseup)="onCamUp($event, 'completed')"
+                   (touchstart)="onCamDown($event, 'completed')"
+                   (touchend)="onCamUp($event, 'completed')"
+                   (mouseenter)="onMouseEnter($event, 'hover')"
+                   (mouseleave)="onMouseLeave($event, 'hover')">
+                    SAVE DATA!
+                </p>
+            </div>
+
+            <i (mousedown)="onCamDown($event, 'removeall')"
+               (mouseup)="onCamUp($event, 'removeall')"
+               (touchstart)="onCamDown($event, 'removeall')"
+               (touchend)="onCamUp($event, 'removeall')"
+               (mouseenter)="onMouseEnter($event, 'hover')"
+               (mouseleave)="onMouseLeave($event, 'hover')"
+               class="glyphicon glyphicon-arrow-left"
+               id="arrow-left">
+            </i>
+
+            <i (mousedown)="onCamDown($event, 'reset')"
+               (mouseup)="onCamUp($event, 'reset')"
+               (touchstart)="onCamDown($event, 'reset')"
+               (touchend)="onCamUp($event, 'reset')"
+               (mouseenter)="onMouseEnter($event, 'hover')"
+               (mouseleave)="onMouseLeave($event, 'hover')"
+               class="glyphicon glyphicon-repeat"
+               id="reset">
+            </i>
+
+            <i (mousedown)="onCamDown($event, 'saveall')"
+               (mouseup)="onCamUp($event, 'saveall')"
+               (touchstart)="onCamDown($event, 'saveall')"
+               (touchend)="onCamUp($event, 'saveall')"
+               (mouseenter)="onMouseEnter($event, 'hover')"
+               (mouseleave)="onMouseLeave($event, 'hover')"
+               class="glyphicon glyphicon-arrow-right"
+               id="arrow-right">
+            </i>
+
+            <!--<p class="prompt" id="swipe">SWIPE</p>-->
+
+            <div class="select-label" id="choose-match">
+                <span class="choose-label" id="select">EDITDATA</span>
+            </div>
+        </div>
+
+        <div class="data save" id="keep"
+             (scroll)="onScroll($event, 'keep')"
+             (touchmove)="onTouchMove($event, 'scroll')" >
+            <p class="save-label" id="save">SAVEDATA</p>
+        </div>
+
+    </div>
+
+
+</div>

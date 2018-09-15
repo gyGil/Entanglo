@@ -1,0 +1,3 @@
+﻿interface wordRecomRequestBody {
+    TargetWord: string;
+}

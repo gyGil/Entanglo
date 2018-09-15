@@ -1,0 +1,106 @@
+﻿.data-edit-dialog {
+
+    box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12);
+    display: block;
+    padding: 2%;
+    border-radius: 2em;
+    box-sizing: border-box;
+    overflow-x: unset;
+    outline: 0;
+    width: 60vw;
+    height: 23vh;
+    min-width: 17em;
+    max-width: 61em;
+    position: absolute;
+    z-index: 1000;
+    background-color: #f2ae72;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-90%);
+}
+
+.mat-dialog-content {
+
+    display: block;
+    margin: -3vw -2vw -2vw 0vw;
+    padding: 0 0vw 0 0vw;
+    max-height: 10vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mat-dialog-actions {
+
+    padding: 0;
+    display: initial;
+    margin-bottom: 0;
+    font-size: 2vh;
+}
+
+.mat-raised-button {
+    color: white;
+    border-radius: 1vw;
+    background-color: #b8a9c9;
+    font-weight: bold;
+    padding: 0 2vw;
+    line-height: 4vh;
+}
+
+.mat-raised-button:hover {
+
+    background-color: wheat;
+    color: #b8a9c9
+}
+
+.mat-dialog-content h3 {
+
+    font-size: 2vw;
+    margin-top: -2vh;
+    margin-bottom: 1vh;
+}
+
+input {
+
+    font-family: inherit;
+    font-size: 2em;
+    line-height: 1;
+    width: 56vw;
+    min-width: 8em;
+    max-width: 29em;
+    border-radius: 0.6em;
+    background-color: #b8a9c9;
+    color: white;
+    outline: 0;
+}
+
+/*datalist {
+
+    margin: 50px;
+    width: 150px;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat #eee;
+}*/
+
+/*option {
+
+    font-weight: bold;
+    font-size: 2.5vh;
+    vertical-align: top;
+    color: #b8a9c9;
+    background: linear-gradient(#b8a9c9 38% white 84%);
+    webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateX(0vw) translateY(-2.0vh);
+    display: block;
+    background-color: #b8a9c9;
+    border-radius: 0.1em;
+    height: 3vh;
+    width: 30vw;
+    padding: 0vh 0.5vw 0vh 0.5vw;
+}*/

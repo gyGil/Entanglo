@@ -1,0 +1,22 @@
+﻿[
+  {
+    "outputFile": "ClientApp/app/components/home/home.component.css",
+    "inputFile": "ClientApp/app/components/home/home.component.sass"
+  },
+  {
+    "outputFile": "ClientApp/app/components/home/home.component.css",
+    "inputFile": "ClientApp/app/components/home/home.component.scss"
+  },
+  {
+    "outputFile": "ClientApp/app/components/navmenu/navmenu.component.css",
+    "inputFile": "ClientApp/app/components/navmenu/navmenu.component.scss"
+  },
+  {
+    "outputFile": "ClientApp/app/components/login/login.component.css",
+    "inputFile": "ClientApp/app/components/login/login.component.scss"
+  },
+  {
+    "outputFile": "ClientApp/app/components/InputData/webcamControl.component.css",
+    "inputFile": "ClientApp/app/components/InputData/webcamControl.component.scss"
+  }
+]

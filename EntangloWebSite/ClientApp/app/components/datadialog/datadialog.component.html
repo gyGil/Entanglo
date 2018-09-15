@@ -1,0 +1,24 @@
+﻿
+<div class="data-edit-dialog" >
+        <!--(mousedown)="onCamDown($event, 'dialog')"
+        (mouseup)="onCamUp($event, 'dialog')"
+        (touchstart)="onCamDown($event, 'dialog')"
+        (touchend)="onCamUp($event, 'dialog')" >-->
+
+    <input id="data-type" type="text" list="option_list" placeholder="{{data.type}}" />
+    <datalist id="option_list">
+        <option *ngFor="let option of data.options" [ngValue]="option">{{option}}</option>
+    </datalist>
+
+    <hr>
+    <mat-dialog-content class="sticky-container" >
+        <br style="height:5vh" >
+        <br style="height:5vh" >
+        <h3><strong>{{data.value}}</strong></h3>
+    </mat-dialog-content>
+    <hr>
+    <mat-dialog-actions>
+        <button mat-raised-button (click)="onCloseConfirm()">CONFIRM</button>&nbsp;
+        <button mat-raised-button (click)="onCloseCancel()">CANCEL</button>
+    </mat-dialog-actions>
+</div>
